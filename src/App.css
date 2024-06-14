@@ -1,0 +1,230 @@
+body, html, .app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f7f9fc; /* Light background color */
+}
+
+.header {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f9fafa, #3c6a81); /* Gradient with blue and purple */
+  color: rgb(28, 74, 96);
+  min-height: 80vh; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+}
+
+.header h1 {
+  font-size: 4rem; /* Increased font size */
+  margin: 0;
+}
+
+.header h2 {
+  font-size: 2rem; /* Increased font size */
+  margin: 10px 0 40px 0;
+}
+
+/* Countdown Timer Styling */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Increased gap */
+  font-size: 2.5rem; /* Increased font size */
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pulse 1s infinite;
+}
+
+.countdown-time {
+  font-size: 5rem; /* Increased font size */
+  font-weight: bold;
+  color: #fffb00; /* Bright yellow color */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.countdown-label {
+  font-size: 1.5rem; /* Increased font size */
+  color: #ffffff;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* General styling for other sections */
+.section {
+  padding: 40px 20px; /* Increased padding */
+  text-align: center;
+  background: white;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+}
+
+.section h2 {
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.5rem; /* Increased font size */
+  color: #333; /* Dark grey color */
+}
+
+/* Schedule Section */
+.schedule ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5rem; /* Increased font size */
+  color: #333; /* Dark grey color */
+}
+
+.schedule li {
+  margin: 15px 0; /* Increased margin */
+}
+
+/* Registration Form */
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form div {
+  margin-bottom: 20px; /* Increased margin */
+}
+
+.registration-form label {
+  margin-right: 10px;
+  font-size: 1.5rem; /* Increased font size */
+  color: #eb2e2e; /* Medium grey color */
+}
+
+.registration-form input {
+  padding: 15px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px; /* Increased max-width */
+  font-size: 1.5rem; /* Increased font size */
+}
+
+.registration-form button {
+  padding: 15px 30px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #0d17dd; /* Button color matching the header */
+  color: rgb(227, 26, 26);
+  font-size: 1.5rem; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #9f00ff; /* Darker shade on hover */
+}
+
+/* Footer */
+.footer {
+  background: #282c34;
+  color: white;
+  padding: 30px 20px; /* Increased padding */
+  text-align: center;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.footer a {
+  color: #fffb00; /* Matching the countdown timer color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Add responsive design for mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 50px 10px;
+  }
+
+  .header h1 {
+    font-size: 3rem; /* Adjusted font size for mobile */
+  }
+
+  .header h2 {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+    margin: 5px 0 20px 0;
+  }
+
+  .countdown {
+    gap: 20px; /* Adjusted gap for mobile */
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  .countdown-time {
+    font-size: 3rem; /* Adjusted font size for mobile */
+  }
+
+  .countdown-label {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .section {
+    padding: 20px 10px; /* Adjusted padding for mobile */
+  }
+
+  .section h2 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+
+  .section p, .schedule ul {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .registration-form form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .registration-form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .registration-form label {
+    margin: 0 0 5px 0;
+  }
+
+  .registration-form input {
+    width: 100%;
+    max-width: 100%; /* Full width for mobile */
+  }
+
+  .footer p {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+}

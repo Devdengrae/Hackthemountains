@@ -1,0 +1,60 @@
+/* schedule.css */
+
+.section.schedule {
+    background-color: #e6eaed; /* Light blue background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  .section.schedule h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333; /* Dark grey text color */
+  }
+  
+  .section.schedule ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .section.schedule li {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .section.schedule li:hover {
+    transform: translateY(-5px); /* Lift item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section.schedule li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .section.schedule li strong {
+    flex: 0 0 100px; /* Fixed width for time */
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #6b73ff; /* Purple color */
+  }
+  
+  .section.schedule li div {
+    flex: 1; /* Take remaining space */
+  }
+  
+  .section.schedule li p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #666666; /* Medium grey text color */
+  }
+  
