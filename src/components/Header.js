@@ -5,7 +5,7 @@ const Header = () => {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const countDownDate = new Date('2024-06-20T23:59:59').getTime();
+    const countDownDate = new Date('2025-06-20T23:59:59').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
